@@ -1,6 +1,6 @@
 [build]
   command = "ng build"
-  publish = "dist/web-mi-boda"
+  publish = "dist/web-mi-boda/browser"
 
 [[redirects]]
   from = "/*"
