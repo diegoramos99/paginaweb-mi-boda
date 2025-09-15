@@ -1,0 +1,10 @@
+.col{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid red;
+    width: 100%;
+    padding: 0%;
+}
+.row{
+    border: 3px solid rgb(15, 248, 151);
+}

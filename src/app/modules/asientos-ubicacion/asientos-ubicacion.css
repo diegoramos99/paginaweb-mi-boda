@@ -1,0 +1,226 @@
+.container{
+    margin: 0%;
+    border: 2px solid gold;
+    padding: 0%;
+    width: 100%;
+}
+.col{
+
+    border: 5px solid rgb(254, 3, 242);
+    padding: 0%;
+}
+.row{
+    border: 3px solid rgb(15, 194, 248);
+    padding: 0%;
+    margin: 0;
+}
+.salon {
+    background-color: rgb(212, 198, 198);
+    border: 5px solid rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    /* 4 columnas */
+    grid-template-rows: repeat(5, 1fr);
+    /* 3 filas */
+    margin: 0;
+    width: 100%;
+    padding: 1rem 1rem 0 1rem;
+    grid-template-areas:
+        "   .      candy   .    mesaPrincipal     .      .      ."
+        "  .        mes6   col1      .            col2   mes1   ."
+        "   .       .      mes5      .            mes4   .     mes2"
+        "  .        mes7   col3      .            col4   mes3   ."
+        "puertachica .     .     puertagrande     .      .      ."
+}
+
+
+.columnas {
+    border: 1px solid rgb(0, 0, 0);
+    height: 50%;
+    width: 25%;
+    background-color: rgb(0, 0, 0);
+}
+
+.mesas {
+    border: 1px solid rgb(0, 0, 0);
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.mesaPrincipal {
+    border: 1px solid red;
+    width: 100%;
+    height: 100%;
+    grid-area: mesaPrincipal;
+}
+
+.candy {
+    border: 1px solid red;
+    width: 100%;
+    height: 100%;
+    grid-area: candy;
+}
+
+.puertagrande {
+    width: 100%;
+    height: 100%;
+    grid-area: puertagrande;
+    display: flex;
+    justify-content: space-around;
+}
+
+.puertagrande>div {
+    width: 50%;
+    height: 100%;
+    ;
+}
+
+.puertaIzquierda {
+    border: 1px solid red;
+    border-top-right-radius: 100%;
+}
+
+.puertaDerecha {
+    border: 1px solid red;
+    border-top-left-radius: 100%;
+}
+
+.puertachica {
+    width: 100%;
+    height: 100%;
+    grid-area: puertachica;
+}
+
+.col1 {
+    grid-area: col1;
+    justify-self: center;
+}
+
+.col2 {
+    grid-area: col2;
+    justify-self: center;
+}
+
+.col3 {
+    grid-area: col3;
+    justify-self: center;
+    align-self: flex-start;
+}
+
+.col4 {
+    grid-area: col4;
+    justify-self: center;
+}
+
+.mes1 {
+    grid-area: mes1;
+    justify-self: start;
+   
+}
+.mes1::before{
+    content: "1";
+    width: 100%;
+    height: 30%;
+    background-color: rgb(147, 246, 122);  
+    border-radius:30% ;
+    position: relative;
+    text-align: center;
+}
+.mes2::before{
+    content: "2";
+    width: 100%;
+    height: 30%;
+    background-color: rgb(147, 246, 122);  
+    border-radius:30% ;
+    position: relative;
+    text-align: center;
+}
+.mes3::before{
+    content: "3";
+    width: 100%;
+    height: 30%;
+    background-color: rgb(147, 246, 122);  
+    border-radius:30% ;
+    position: relative;
+    text-align: center;
+}
+.mes4::before{
+    content: "4";
+    width: 100%;
+    height: 30%;
+    background-color: rgb(147, 246, 122);  
+    border-radius:30% ;
+    position: relative;
+    text-align: center;
+}
+.mes5::before{
+    content: "5";
+    width: 100%;
+    height: 30%;
+    background-color: rgb(147, 246, 122);  
+    border-radius:30% ;
+    position: relative;
+    text-align: center;
+}
+.mes6::before{
+    content: "6";
+    width: 100%;
+    height: 30%;
+    background-color: rgb(147, 246, 122);  
+    border-radius:30% ;
+    position: relative;
+    text-align: center;
+}
+.mes7::before{
+    content: "7";
+    width: 100%;
+    height: 30%;
+    background-color: rgb(147, 246, 122);  
+    border-radius:30% ;
+    position: relative;
+    text-align: center;
+}
+.mes2 {
+    grid-area: mes2;
+    justify-self: end;
+}
+
+.mes3 {
+    grid-area: mes3;
+    justify-self: start;
+}
+
+.mes4 {
+    grid-area: mes4;
+    justify-self: end;
+}
+
+.mes5 {
+    grid-area: mes5;
+}
+
+.mes6 {
+    grid-area: mes6;
+    justify-self: center;
+}
+
+.mes7 {
+    grid-area: mes7;
+    justify-self: center;
+}
+.cartel{
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    padding: 1rem;
+    z-index: 10;
+    max-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -7,10 +7,12 @@ import { Header } from './core/header/header';
 import { Asistencia } from './pages/asistencia/asistencia';
 import { Ubicacion } from './pages/ubicacion/ubicacion';
 import { trigger, transition, style, animate, query, group } from '@angular/animations';
+import { Footer } from './core/footer/footer';
+import { Asientos } from './pages/asientos/asientos';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Home , RouterLink, RouterLinkActive, Header,Asistencia,Ubicacion],
+  imports: [RouterOutlet, Home , RouterLink, RouterLinkActive, Header,Asistencia,Ubicacion,Footer,Asientos],
   templateUrl: './app.html',
   styleUrl: './app.css',
    animations: [

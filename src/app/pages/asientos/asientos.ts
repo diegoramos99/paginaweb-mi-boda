@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { AsientosUbicacion } from '../../modules/asientos-ubicacion/asientos-ubicacion';
 
 @Component({
   selector: 'app-asientos',
-  imports: [],
+  imports: [AsientosUbicacion],
   templateUrl: './asientos.html',
   styleUrl: './asientos.css'
 })

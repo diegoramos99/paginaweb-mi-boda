@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="col ">
+            <div class="salon ">
+                <div class="columnas col1">1</div>
+                <div class="columnas col2">2</div>
+                <div class="columnas col3">3</div>
+                <div class="columnas col4">4</div>
+
+                @for (mesa of mesas; track mesa.numero; let i = $index) {
+                <div class="mesa border  p-3 m-2" [ngClass]="'mes' + (i + 1)"
+                    (click)="mostrarCartel($event, mesa.invitados)">
+                </div>
+                }
+                <div *ngIf="cartelVisible" class="cartel">
+                    <h5>Invitados</h5>
+                    <ul>
+                        <li *ngFor="let invitado of invitadosSeleccionados">{{ invitado }}</li>
+                    </ul>
+                    <button class="btn btn-sm btn-danger" (click)="cerrarCartel()">Cerrar</button>
+                </div>
+                <div class="mesaPrincipal">mesa principal</div>
+                <div class="candy">candy</div>
+                <div class="puertachica d-flex justify-content-center justify-content-center">
+                    <div class="puertaIzquierda w-50">p</div>
+                    <div class="puertaDerecha w-50">p</div>
+                </div>
+                <div class="puertagrande">
+                    <div class="puertaIzquierda">p</div>
+                    <div class="puertaDerecha">p</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
