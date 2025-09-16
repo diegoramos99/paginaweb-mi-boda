@@ -1,3 +1,9 @@
 .container  {
   background-color: #f1d9c9;
+  height: 80vh;
+  border: 2px solid #000;
+}
+.app-formulario {
+height: 100%;
+display: flex;
 }
