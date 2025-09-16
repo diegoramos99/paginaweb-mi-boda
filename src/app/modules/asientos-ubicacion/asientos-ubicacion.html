@@ -10,7 +10,7 @@
                 @for (mesa of mesas; track mesa.numero; let i = $index) {
                 <div class="mesa  w-100 h-1 m-auto" [ngClass]="'mes' + (i + 1)"
                     (click)="mostrarCartel($event, mesa.invitados)">
-                    <img src="/assets/mesas.png" alt="Mesa">
+                    <img src="assets/mesas.png" alt="Mesa">
                 </div>
                 }
                 <div *ngIf="cartelVisible" class="cartel">
@@ -21,11 +21,11 @@
                     <button class="btn btn-sm btn-danger" (click)="cerrarCartel()">Cerrar</button>
                 </div>
                 <div class="mesaPrincipal">
-                <img class="mesaPrincipalImg" src="/assets/mesafinal.png" alt="Mesa">
+                <img class="mesaPrincipalImg" src="assets/mesafinal.png" alt="Mesa">
 
                 </div>
                 <div class="candy">
-                    <img src="/assets/candy.png" alt="Candy Bar">
+                    <img src="assets/candy.png" alt="Candy Bar">
                 </div>
                 <div class="puertachica d-flex justify-content-center justify-content-center">
                     <div class="puertaIzquierda w-50"></div>
