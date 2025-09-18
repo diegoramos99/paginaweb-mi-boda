@@ -35,24 +35,34 @@ export class App {
 
   constructor(private router: Router) {}
 
+  ngOnInit() {
+    
+  }
+
   // Detecta swipe desde HammerJS manualmente
   ngAfterViewInit() {
     const hammer = new Hammer(document.body);
     hammer.on('swipeleft', () => this.onSwipeLeft());
     hammer.on('swiperight', () => this.onSwipeRight());
+    
   }
-
+  
   onSwipeLeft() {
+    this.indiceActual=this.vistas.indexOf(this.router.url);
     if (this.indiceActual < this.vistas.length - 1) {
       this.indiceActual++;
       this.router.navigate([this.vistas[this.indiceActual]]);
     }
+  
   }
 
   onSwipeRight() {
+        this.indiceActual=this.vistas.indexOf(this.router.url);
     if (this.indiceActual > 0) {
       this.indiceActual--;
       this.router.navigate([this.vistas[this.indiceActual]]);
     }
+    console.log(this.indiceActual);
+    
   }
 }

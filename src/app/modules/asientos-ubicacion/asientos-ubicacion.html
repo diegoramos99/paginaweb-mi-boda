@@ -12,10 +12,11 @@
                     (click)="mostrarCartel($event, mesa.invitados)">
                     <img src="assets/mesas.png" alt="Mesa">
                 </div>
+                
                 }
                 <div *ngIf="cartelVisible" class="cartel">
                     <h5>Invitados</h5>
-                    <ul>
+                    <ul class="list-unstyled">
                         <li *ngFor="let invitado of invitadosSeleccionados">{{ invitado }}</li>
                     </ul>
                     <button class="btn btn-sm btn-danger" (click)="cerrarCartel()">Cerrar</button>

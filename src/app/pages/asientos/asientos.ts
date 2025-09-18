@@ -9,4 +9,6 @@ import { AsientosUbicacion } from '../../modules/asientos-ubicacion/asientos-ubi
 })
 export class Asientos {
 
+
+ 
 }

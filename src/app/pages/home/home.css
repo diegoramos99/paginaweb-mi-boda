@@ -6,6 +6,10 @@ body {
   margin: 0;
   padding: 0;
 }
+.container {
+
+  padding:0;
+}
 
 .seccion {
   background-color: #E6E5DA;
@@ -73,7 +77,6 @@ button:hover {
 /* Responsive */
 @media (max-width: 600px) {
   .seccion {
-    padding: 20px 10px;
   }
 
   input, select, textarea {

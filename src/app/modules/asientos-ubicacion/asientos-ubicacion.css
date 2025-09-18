@@ -197,6 +197,25 @@
     grid-area: mes2;
     justify-self: start;
 }
+.pulso{
+    background-color: rgba(53, 145, 64, 0.476);
+    border-radius: 100%;
+    animation: pulse 1s infinite;
+}
+ @keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(7, 7, 7, 0.7);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(215, 50, 50, 0);
+  }
+}
 
 .mes3 {
     grid-area: mes3;
