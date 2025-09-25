@@ -1,8 +1,7 @@
 .container {
     height: 80vh;
     overflow: auto;
-    background-color: #cdccc3;
-}
+ background-color: #2F4F4F;}
 
 .col {
     padding: 10px;
@@ -10,5 +9,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: smaller;
+    color: #FDF6EC;
 }

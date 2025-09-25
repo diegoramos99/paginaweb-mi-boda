@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #f4e4d9;
+  background-color: #2F4F4F;
   padding: 10px 20px;
   display: flex;
   gap: 20px;
@@ -10,13 +10,13 @@
 
 .nav-link {
   text-decoration: none;
-  color: #5a3e36;
+  color: #FDF6EC;
   font-weight: 600;
   transition: color 0.3s;
 }
 
 .nav-link:hover,
 .nav-link.active {
-  color: #a96f43;
-  border-bottom: 2px solid #a96f43;
+  color: #C6A15B;
+  border-bottom: 2px solid #C6A15B;
 }
