@@ -48,6 +48,8 @@ export class App {
   }
   
   onSwipeLeft() {
+    console.log("para la izquierda");
+    
     this.indiceActual=this.vistas.indexOf(this.router.url);
     if (this.indiceActual < this.vistas.length - 1) {
       this.indiceActual++;
@@ -57,6 +59,7 @@ export class App {
   }
 
   onSwipeRight() {
+    console.log("para la derecha");
         this.indiceActual=this.vistas.indexOf(this.router.url);
     if (this.indiceActual > 0) {
       this.indiceActual--;

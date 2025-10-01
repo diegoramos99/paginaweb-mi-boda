@@ -1,7 +1,8 @@
 <div class="container ">
     <div class="row ">
         <div class="col">
-            <app-asientos-ubicacion class="a"></app-asientos-ubicacion>
+            <app-asientos-ubicacion class="a" [nombre]="nombreInvitado"></app-asientos-ubicacion>
+            <button class="btn btn-success mt-3" (click)="mostrarPopup()">Mostrar Invitación</button>
 
         </div>
     </div>
