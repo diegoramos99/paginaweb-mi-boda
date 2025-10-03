@@ -20,3 +20,11 @@
   color: #C6A15B;
   border-bottom: 2px solid #C6A15B;
 }
+.asistencia {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #7d6b05; /* Color dorado para destacar */
+  background-color: #FDF6EC; /* Fondo oscuro para contraste */
+  padding: 5px ;
+  border-radius: 5px;
+}

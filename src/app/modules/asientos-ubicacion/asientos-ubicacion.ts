@@ -12,22 +12,28 @@ export class AsientosUbicacion {
   @Input() nombre: string = '';
 
 
-  
+
   ngOnChanges() {
     if (this.nombre) {
-      const mesas=document.querySelectorAll('.mesa') as NodeListOf<HTMLElement>;
-    mesas.forEach(mesa=>{
-      mesa.classList.remove('pulso');
-    })
+      const mesas = document.querySelectorAll('.mesa') as NodeListOf<HTMLElement>;
+      mesas.forEach(mesa => {
+        mesa.classList.remove('pulso');
+      })
       localStorage.setItem('nombreInvitado', this.nombre!);
 
       let nombreBuscado = localStorage.getItem('nombreInvitado');
       nombreBuscado = nombreBuscado!.toLocaleLowerCase().replace(/\b\w/g, c => c.toUpperCase()).trim();
-      let nombreDividido = nombreBuscado.split(" ");
       this.mesas.forEach(mesa => {
         for (let index = 0; index < mesa.invitados.length; index++) {
           const nombreDivididoDeInvitados = mesa.invitados[index].split(" ");
-          if (nombreDivididoDeInvitados.includes(nombreDividido[0] || nombreDividido[1])) {
+          const nombreCompletoInvitado = mesa.invitados[index];
+          const nombreCompletoInvertido = nombreCompletoInvitado.split(" ").reverse().join(" ");
+          console.log(nombreDivididoDeInvitados + " - " + nombreBuscado);
+          console.log(nombreCompletoInvitado + " - " + nombreBuscado);
+          console.log(nombreCompletoInvertido + " - " + nombreBuscado);
+          
+          
+          if (nombreDivididoDeInvitados[0].includes(nombreBuscado!) || nombreDivididoDeInvitados[1].includes(nombreBuscado!)|| nombreCompletoInvitado.includes(nombreBuscado!)|| nombreCompletoInvertido.includes(nombreBuscado!)) {
             const elementoMesa = document.querySelector(`.mes${mesa.numero}`) as HTMLElement;
             elementoMesa.classList.add('pulso');
           }
@@ -38,18 +44,18 @@ export class AsientosUbicacion {
   }
   ngOnInit() {
 
-      Swal.fire({
-  title: 'Bienvenido 🎉',
-  text: 'Bienvenido a la sección de asientos. Aquí podrás ver la distribución de los asientos para el evento. Por favor, revisa tu asignación y si tienes alguna pregunta, no dudes en contactarnos. ¡Gracias por ser parte de este día especial!',
-  icon: 'info',
-  confirmButtonText: 'Entendido',
-  showClass: {
-    popup: 'animate__animated animate__fadeInDown '
-  },
-  hideClass: {
-    popup: 'animate__animated animate__fadeOutUp animate__slow	'
-  }
-});
+    Swal.fire({
+      title: 'Bienvenido 🎉',
+      text: 'Bienvenido a la sección de asientos. Aquí podrás ver la distribución de los asientos para el evento. Por favor, revisa tu asignación y si tienes alguna pregunta, no dudes en contactarnos. ¡Gracias por ser parte de este día especial!',
+      icon: 'info',
+      confirmButtonText: 'Entendido',
+      showClass: {
+        popup: 'animate__animated animate__fadeInDown '
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutUp animate__slow	'
+      }
+    });
 
   }
 
@@ -140,7 +146,7 @@ export class AsientosUbicacion {
   invitadosSeleccionados: string[] = [];
 
   mostrarCartel(event: MouseEvent, invitados: string[]) {
-    
+
 
     this.invitadosSeleccionados = invitados;
     this.cartelVisible = true;
@@ -154,9 +160,11 @@ export class AsientosUbicacion {
       for (let index = 0; index < li.length; index++) {
         let nombreLi = li[index].textContent;
         let nombreDividido = nombreLi!.split(" ");
-        console.log(nombreDividido);
-        
-        if (nombreDividido[0].includes(nombre!)|| nombreDividido[1].includes(nombre!)) {
+        let nombreCompleto = nombreLi!;
+        let nombreCompletoInvertido = nombreDividido.reverse().join(" ");
+      
+
+        if (nombreDividido[0].includes(nombre!) || nombreDividido[1].includes(nombre!)|| nombreCompleto.includes(nombre!)|| nombreCompletoInvertido.includes(nombre!)) {
           li[index].style.fontWeight = 'bold';
           li[index].style.color = 'white';
           li[index].style.backgroundColor = 'rgba(53, 145, 64, 0.476)';

@@ -1,3 +1,33 @@
-iframe{
-    width: 100%;
+/* Sección de Ubicación */
+.ubicacion-section {
+  background-color: #FDF6EC; /* fondo claro */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.ubicacion-section h2 {
+  font-family: "Pinyon Script", cursive;
+  font-size: 2.5rem;
+  color: #2E4F3E; /* verde oscuro */
+  margin-bottom: 15px;
+}
+
+.ubicacion-section p {
+  color: #4a2e2a; /* marrón suave para texto */
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+/* Contenedor del mapa */
+.mapa-container {
+  border: 3px solid #C6A15B; /* borde dorado */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mapa-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }

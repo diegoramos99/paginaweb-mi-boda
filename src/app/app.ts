@@ -9,10 +9,11 @@ import { Ubicacion } from './pages/ubicacion/ubicacion';
 import { trigger, transition, style, animate, query, group } from '@angular/animations';
 import { Footer } from './core/footer/footer';
 import { Asientos } from './pages/asientos/asientos';
+import { ListaRegalos } from './pages/lista-regalos/lista-regalos';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Home , RouterLink, RouterLinkActive, Header,Asistencia,Ubicacion,Footer,Asientos],
+  imports: [RouterOutlet, Home , RouterLink, RouterLinkActive, Header,Asistencia,Ubicacion,Footer,Asientos,ListaRegalos],
   templateUrl: './app.html',
   styleUrl: './app.css',
    animations: [
@@ -30,7 +31,7 @@ import { Asientos } from './pages/asientos/asientos';
 })
 export class App {
   protected title = 'web-mi-boda';
-  vistas = ['/home', '/asistencia', '/asientos', '/ubicacion'];
+  vistas = ['/home', '/asistencia', '/asientos', '/ubicacion','/lista-regalos'];
   indiceActual = 0;
 
   constructor(private router: Router) {}
@@ -55,7 +56,6 @@ export class App {
       this.indiceActual++;
       this.router.navigate([this.vistas[this.indiceActual]]);
     }
-  
   }
 
   onSwipeRight() {
