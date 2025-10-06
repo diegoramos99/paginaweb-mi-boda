@@ -19,26 +19,11 @@ export class ListaRegalos implements OnInit {
   async ngOnInit() {
     // Aquí iría la llamada al servicio para obtener los datos
     const text =this.regalosService.getRegalos().subscribe( text => {
-      const rows = text.split('\n');
-      const headers = rows[3].split(',' );
-     
-      
-      
-      for (let index = 2; index < rows.length; index++) {
-        const fila = rows[index];
-        console.log(fila);
-        
-        const columnas= fila.split(/,(?!\s)/); 
-        for (let index = 0; index < columnas.length; index++) {
-          console.log(columnas[index]);          
-        }
-        this.regalos.push(columnas[9]);
-        
-         
-          
-      }
-    });
+     text.forEach((regalo:any) => {
+      this.regalos.push(regalo["  🎁 ¿Ya tenés pensado el regalo ideal?"]);
     
   
-  }
+  })
+})
+}
 }

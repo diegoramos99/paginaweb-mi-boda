@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import {map} from 'rxjs/operators';
+import *  as Papa from 'papaparse';
 @Injectable({
   providedIn: 'root'
 })
@@ -8,8 +10,13 @@ export class RegalosService {
   constructor( private http :HttpClient ) { }
 
 
-  getRegalos(){
-  const url = `https://docs.google.com/spreadsheets/d/${this.urlRegalo}/export?format=csv`;
-    return this.http.get(url, {responseType: 'text'});
+  getRegalos() {
+    const url = `https://docs.google.com/spreadsheets/d/${this.urlRegalo}/export?format=csv`;
+    return this.http.get(url, { responseType: 'text' }).pipe(
+      map(csvText => {
+        const parsed = Papa.parse(csvText, { header: true });
+        return parsed.data; // Te devuelve un array de objetos
+      })
+    );
   }
 }
