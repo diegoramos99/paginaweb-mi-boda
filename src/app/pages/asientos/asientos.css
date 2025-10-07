@@ -22,3 +22,11 @@
 .a{
     height: 100%;
 }
+.btn{
+    background-color: #E3B04B;
+    color: white;
+    border: none;
+    align-self: center;
+    margin: .5rem;   
+    padding: .5rem 0.5rem;
+}
