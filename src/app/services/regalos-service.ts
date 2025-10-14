@@ -13,7 +13,10 @@ export class RegalosService {
   getRegalos() {
     const url = `https://docs.google.com/spreadsheets/d/${this.urlRegalo}/export?format=csv`;
     return this.http.get(url, { responseType: 'text' }).pipe(
+      
       map(csvText => {
+        console.log(csvText);
+        
         const parsed = Papa.parse(csvText, { header: true });
         return parsed.data; // Te devuelve un array de objetos
       })
