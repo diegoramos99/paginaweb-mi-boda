@@ -17,6 +17,7 @@ export class ListaRegalos implements OnInit , AfterViewInit {
 
   constructor(private regalosService: RegalosService ) {}
   regaloSeleccionado:any=[];
+  
   compartido:any=[];
   regalos:any=[this.regaloSeleccionado, this.compartido];
   
@@ -26,14 +27,15 @@ export class ListaRegalos implements OnInit , AfterViewInit {
       console.log(text);
       
      text.forEach((regalo:any) => {
-       if (regalo["  🎁 ¿Ya tenés pensado el regalo ideal?"] != "😣aun no lo pense") {
-      this.regaloSeleccionado.push(regalo["  🎁 ¿Ya tenés pensado el regalo ideal?"]);
+        const regaloBuscado = regalo["  🎁 ¿Ya tenés pensado el regalo ideal?"];
+      if (regaloBuscado!="" && regaloBuscado!="💸 Aporte económico (el clásico pero nunca falla 💕)"&&regaloBuscado!="😣aun no lo pense" ) {
+        
+        this.regaloSeleccionado.push(regalo["  🎁 ¿Ya tenés pensado el regalo ideal?"]);
+        this.compartido.push(regalo["tu regalo es compartido con otro invitado?"]);
       }
-      this.compartido.push(regalo["tu regalo es compartido con otro invitado?"]);
+      console.log(this.regaloSeleccionado);
       
   })
-  console.log(this.compartido);
-  
 })
 }
 ngAfterViewInit()  {
