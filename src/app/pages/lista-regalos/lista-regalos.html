@@ -7,20 +7,36 @@
         <h6>para que tu regalo se vizualice en esta lista tenes que completar el <a href="/asistencia" class="  animate__animated animate__pulse animate__infinite asistencia" routerLinkActive="active">formulario de asistencia</a> al menos una vez. Gracias!
 </h6>
        <ul class="lista-regalos">
-  <ng-container *ngFor="let regalo of regaloSeleccionado; let i = index">
-  <li *ngIf="compartido[i] === 'Si ,es compartido'" 
-      data-bs-toggle="tooltip" 
-      data-bs-placement="right" 
-      data-bs-title="Este regalo ya fue elegido y es compartido con otro invitado.">
-    {{ regalo }}
-  </li>
-  <li *ngIf="compartido[i] === 'No,no es compartido'" 
-      data-bs-toggle="tooltip" 
-      data-bs-placement="right" 
-      data-bs-title="Este regalo ya fue elegido">
-    {{ regalo }}
-  </li>
+         <ng-container *ngFor="let regalo of regaloSeleccionado; let i = index">
+           <li *ngIf="compartido[i] === 'Si ,es compartido'" 
+           data-bs-toggle="tooltip" 
+           data-bs-placement="right" 
+           [attr.data-bs-title]="'Este regalo ya fue elegido. Es compartido: ' + compartidoPor(i)">
+           {{ regalo }}
+          </li>
+          <li *ngIf="compartido[i] === 'No,no es compartido'" 
+          data-bs-toggle="tooltip" 
+          data-bs-placement="right" 
+          data-bs-title="Este regalo ya fue elegido">
+          {{ regalo }}
+        </li>
+       
 </ng-container>
+ <li data-bs-toggle="tooltip" 
+data-bs-placement="right" 
+data-bs-title="Este regalo ya fue elegido" >TV 📺</li>
+        <li data-bs-toggle="tooltip" 
+data-bs-placement="right" 
+data-bs-title="Este regalo ya fue elegido" >notebook 💻</li>
+        <li data-bs-toggle="tooltip" 
+data-bs-placement="right" 
+data-bs-title="Este regalo ya fue elegido" >microndas 🔥</li>
+        <li data-bs-toggle="tooltip" 
+data-bs-placement="right" 
+data-bs-title="Este regalo ya fue elegido" >Heladera 🧊</li>
+        <li data-bs-toggle="tooltip" 
+data-bs-placement="right" 
+data-bs-title="Este regalo ya fue elegido" >lavarropa 🧼</li>
 </ul> 
       </div>
     </div>

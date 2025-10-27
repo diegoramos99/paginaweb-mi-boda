@@ -31,7 +31,7 @@ import { ListaRegalos } from './pages/lista-regalos/lista-regalos';
 })
 export class App {
   protected title = 'web-mi-boda';
-  vistas = ['/home', '/asistencia', '/asientos', '/ubicacion','/lista-regalos'];
+  vistas = ['/home', '/asistencia', '/asientos', '/ubicacion','/regalos'];
   indiceActual = 0;
 
   constructor(private router: Router) {}

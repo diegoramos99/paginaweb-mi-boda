@@ -19,12 +19,10 @@ export class ListaRegalos implements OnInit , AfterViewInit {
   regaloSeleccionado:any=[];
   
   compartido:any=[];
-  regalos:any=[this.regaloSeleccionado, this.compartido];
-  
+  regalos:any=[];
+
   async ngOnInit() {
-    // Aquí iría la llamada al servicio para obtener los datos
     const text =this.regalosService.getRegalos().subscribe( text => {
-      console.log(text);
       
      text.forEach((regalo:any) => {
         const regaloBuscado = regalo["  🎁 ¿Ya tenés pensado el regalo ideal?"];
@@ -32,12 +30,26 @@ export class ListaRegalos implements OnInit , AfterViewInit {
         
         this.regaloSeleccionado.push(regalo["  🎁 ¿Ya tenés pensado el regalo ideal?"]);
         this.compartido.push(regalo["tu regalo es compartido con otro invitado?"]);
+        this.regalos.push({
+            nombre: regalo["Nombre y apellido:"],
+            regalo: regalo["  🎁 ¿Ya tenés pensado el regalo ideal?"],
+            esCompratido:regalo["tu regalo es compartido con otro invitado?"],
+            conQuienComparte: regalo["¿Con quién compartis tu regalo?"],
+        });
       }
-      console.log(this.regaloSeleccionado);
       
   })
+  console.log(this.regalos);
+  
 })
 }
+compartidoPor(indice:any){
+const regalosCompartido=this.regalos[indice].conQuienComparte;
+return regalosCompartido +" , " + this.regalos[indice].nombre;
+ 
+};
+
+
 ngAfterViewInit()  {
   setTimeout(() => {
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
