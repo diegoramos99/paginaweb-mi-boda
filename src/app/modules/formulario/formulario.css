@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: #FDF6EC;
+    height: 80vh;
+    padding: 0%;
+    margin: 0;
+}
