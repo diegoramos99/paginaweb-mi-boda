@@ -1,1 +1,6 @@
 @import 'animate.css/animate.min.css';
+*{
+    font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

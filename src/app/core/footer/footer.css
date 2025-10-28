@@ -1,5 +1,11 @@
+*{
+      font-family: 'Arial', sans-serif ;
+
+}
 .container-fluid {
- background-color: #2F4F4F;}
+ background-color: #2F4F4F;
+height: 20vh;
+}
 
 .col {
     padding: 10px;

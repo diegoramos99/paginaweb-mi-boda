@@ -2,8 +2,8 @@
   background-color: #2F4F4F;
   display: flex;
   gap: 10px;
-  justify-content: center;
-  font-family: 'Arial', sans-serif;
+  justify-content: space-around;
+  font-family: 'Arial', sans-serif ;
   height: 10vh;
 }
 
@@ -12,7 +12,8 @@
   color: #FDF6EC;
   font-weight: 600;
   transition: color 0.3s;
- 
+    font-family: 'Arial', sans-serif ;
+
 }
 
 .nav-link:hover,
@@ -23,11 +24,12 @@
 .asistencia {
  
 }
-@media (max-width: 600px) {
+@media (max-width: 300px) {
   .navbar {
-    
+  
   }
 
   .nav-link {
+     
   }
 }
