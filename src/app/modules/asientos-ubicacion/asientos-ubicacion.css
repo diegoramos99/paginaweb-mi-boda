@@ -28,9 +28,9 @@
     overflow: hidden;
     grid-template-areas:
         "   .      candy   .    mesaPrincipal     .      .      ."
-        "  .        mes6   col1      .            col2   mes1   ."
-        "   .       .      mes5      .            mes4   .     mes2"
-        "  .        mes7   col3      .            col4   mes3   ."
+        "  .        mes2   col1      .            col2   mes1   ."
+        "   .       .      mes7      .            mes5   .     mes4"
+        "  .        mes3   col3      .            col4   mes6   ."
         "puertachica .     .     puertagrande     .      .      ."
 }
 

@@ -31,9 +31,9 @@ export class AsientosUbicacion {
           console.log(nombreDivididoDeInvitados + " - " + nombreBuscado);
           console.log(nombreCompletoInvitado + " - " + nombreBuscado);
           console.log(nombreCompletoInvertido + " - " + nombreBuscado);
-          
-          
-          if (nombreDivididoDeInvitados[0].includes(nombreBuscado!) || nombreDivididoDeInvitados[1].includes(nombreBuscado!)|| nombreCompletoInvitado.includes(nombreBuscado!)|| nombreCompletoInvertido.includes(nombreBuscado!)) {
+
+
+          if (nombreDivididoDeInvitados[0].includes(nombreBuscado!) || nombreDivididoDeInvitados[1].includes(nombreBuscado!) || nombreCompletoInvitado.includes(nombreBuscado!) || nombreCompletoInvertido.includes(nombreBuscado!)) {
             const elementoMesa = document.querySelector(`.mes${mesa.numero}`) as HTMLElement;
             elementoMesa.classList.add('pulso');
           }
@@ -63,81 +63,87 @@ export class AsientosUbicacion {
     numero: 1,
     invitados: ["Arce Monica",
       "Cejas Amadeo",
-      "Cejas Julio",
-      "Cejas Veronica",
       "Gramajo Fernando",
       "Gramajo Mayra",
       "Ziegler Lucas",
       "Ziegler Francisco",
-      "Cejas Benita",
-      "Cejas Vitalio",
-      "Cejas Lorena",]
+      "gutierrez Margarita"]
   },
   {
     numero: 2,
-    invitados: ["Carrizo Diego",
-      "Carrizo Jazmín",
-      "Carrizo Dalila",
-      "Carrizo Francisco",
-      "Diaz Ariel",
-      "Cejas Ariel",
-      "Cejas Ivanna",
-      "Cejas Hector",
-      "Arce Laura",
-      "Chazarreta Lucas",
-      "Chazarreta Juliana",]
-  },
-  {
-    numero: 3,
-    invitados: ["Arce Luisa",
-      "Perez Sebastian",
-      "Perez Bianca",
-      "Perez Nicolas",
-      "Arce Maria Estela",
-      "Piutrin Luna",
-      "Piutrin Yesica",
-      "Rojas Nehemías",
-      "Arce Julio",
-      "Arce Marta",
-      "Gutierrez Margarita",]
-  },
-  {
-    numero: 4,
-    invitados: ["Gramajo Ariel",
-      "Su mujer",
-      "Su hijo",
-      "Mamani Celina",
+    invitados: ["Mamani Celina",
       "Caballero Roma",
       "Ramos Maricruz",
       "Frete Fabiana",
       "Ramos Maria",
       "Ramos Mariana",
       "Ramos Marcela",
-      "Medina Luis",]
+      "Medina Luis",
+      "Vargas Gabriel",
+      "Acuña Mailiy"]
+  },
+  {
+    numero: 3,
+    invitados: [
+      "Arce Laura",
+      "Arce Luisa",
+      "Perez Sebastian",
+      "Perez Bianca",
+      "Arce Maria Estela",
+      "Piutrin Yesica",
+      "Rojas Nehemías",
+      "Arce Julio",
+      "Arce Marta",]
+  },
+  {
+    numero: 4,
+    invitados: [
+"Cejas Benita",
+"Cejas Vitalio",
+"Cejas Lorena",
+"Carrizo Diego",
+"Carrizo Francisco",
+"Cejas Ariel",
+"Cejas Hector",]
   },
   {
     numero: 5,
-    invitados: ["Vargas Gabriel",
-      "Acuña Maily",
-      "Gonzalez Lucila",
-      "Rodriguez Angela",
-      "Vera Micaela",
-      "Migliavacca Camila"]
+    invitados: [
+"Cejas Julio",
+"Cejas Veronica",
+"Carrizo Jazmin",
+"Carrizo Dalila",
+"Cejas Ivanna",
+"Chazarreta Lucas",
+"Moreira Nadia Abril",
+"Chazarreta Juliana",
+"Perez Nicolas",
+"Piutrin Luna",]
   },
   {
     numero: 6,
-    invitados: ["Diaz Santiago",
-      "Torres Jessica",
-      "Leguero Axel",
-      "Romero Santiago",
-      "(Su novia)", "Lillia Lucas"]
+    invitados: [
+"Gonzalez Lucila",
+"Migliavacca Camila",
+"Risso Lucas",
+"Mercado Nadia",
+"Medina Thomas",
+"Veraa Micaela",
+"Alfonso Santiago",
+"Rodriguez Angela",
+"Diaz Ariel",
+"Agüero Sol",] 
   },
   {
     numero: 7,
-    invitados: ["Cáceres Sol",
-      "Castillo Matías",
-      "Da Cruz Patricia",
-      "Zapata Micaela",]
+    invitados: [
+
+"Diaz Santiago.",
+"Torres Jessica",
+"Leguero Axel",
+"Romero Santiago",
+"(Camila su novia)",
+"Lillia Lucas",]
   }]
 
   cartelVisible = false;
@@ -162,9 +168,9 @@ export class AsientosUbicacion {
         let nombreDividido = nombreLi!.split(" ");
         let nombreCompleto = nombreLi!;
         let nombreCompletoInvertido = nombreDividido.reverse().join(" ");
-      
 
-        if (nombreDividido[0].includes(nombre!) || nombreDividido[1].includes(nombre!)|| nombreCompleto.includes(nombre!)|| nombreCompletoInvertido.includes(nombre!)) {
+
+        if (nombreDividido[0].includes(nombre!) || nombreDividido[1].includes(nombre!) || nombreCompleto.includes(nombre!) || nombreCompletoInvertido.includes(nombre!)) {
           li[index].style.fontWeight = 'bold';
           li[index].style.color = 'white';
           li[index].style.backgroundColor = 'rgba(53, 145, 64, 0.476)';
