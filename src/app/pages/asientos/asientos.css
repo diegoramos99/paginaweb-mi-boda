@@ -2,6 +2,7 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    
 }
 .col{
     display: flex;
@@ -17,7 +18,7 @@
   border: 1px solid rgb(0, 0, 0);
     height: 80vh;
     margin: auto;
-    background-color: #FDF6EC;
+  background-color: #e6e5da;
 }
 .a{
     height: 100%;

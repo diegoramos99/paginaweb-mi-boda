@@ -3,7 +3,7 @@
 
 }
 .container-fluid {
- background-color: #2F4F4F;
+background: linear-gradient(to top,  #3e4539,#97a58a);
 height: 20vh;
 }
 

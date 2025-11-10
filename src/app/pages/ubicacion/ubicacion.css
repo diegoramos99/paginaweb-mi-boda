@@ -10,7 +10,8 @@ p {
 .container{
  height: 80vh;
  overflow: auto;
-background-color: #FDF6EC;
+  background-color: #e6e5da;
+;
 }
 
 /* Responsive */
