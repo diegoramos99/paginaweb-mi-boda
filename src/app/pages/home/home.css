@@ -115,15 +115,25 @@ background: linear-gradient(to top,  #3e4539,#97a58a);
 .imgColores .blanco,.verde,.naranja{
   width: 30%;
   height: 90%;
+  background-color: #2F4F4F;
   border-radius:100%;
   margin: auto;
+  text-align: center;
+  
 
 } 
+.imgColores .blanco span ,.verde span , .naranja span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 100%;
+}
 .imgColores .blanco{
   background-color: #FFFFFF;
 }
 .imgColores .verde{
-  background-color: #97a58a;
+  background-color: #688828
 }
 .imgColores .naranja{
   background-color: #e76100;
