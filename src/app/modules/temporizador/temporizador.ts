@@ -7,7 +7,7 @@ import { OnInit } from '@angular/core';
   styleUrl: './temporizador.css'
 })
 export class Temporizador implements OnInit {
-  fechaLimite = new Date('2026-01-16T23:59:59Z');
+  fechaLimite = new Date('2026-03-16T23:59:59Z');
   dias:any;
   horas:any;
   minutos:any;
