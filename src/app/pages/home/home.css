@@ -10,13 +10,14 @@ body {
 .container-fluid {
   position: relative;
   padding:0;
-  height: 80vh;
+  height: 100vh;
   overflow-x:hidden;
 }
 .contenedor-de-estrellass {
   position: fixed;
+  top: 0;
   width: 100%;
-  height: 80vh;
+  height:100%;
   pointer-events: none;
 }
 
@@ -44,7 +45,7 @@ h1, h2, h3 {
   margin-bottom: 20px;
   font-family: "Pinyon Script", cursive;
   font-weight: bold;
-  font-style: normal; 
+  font-style: normal;
 }
 p{
   z-index: 10000;
@@ -119,9 +120,9 @@ background: linear-gradient(to top,  #3e4539,#97a58a);
   border-radius:100%;
   margin: auto;
   text-align: center;
-  
 
-} 
+
+}
 .imgColores .blanco span ,.verde span , .naranja span{
   display: flex;
   justify-content: center;
@@ -149,7 +150,7 @@ background: linear-gradient(to top,  #3e4539,#97a58a);
   .imgColores{
     position: relative;
   width: 100%;
- 
+
 }
 }
 

@@ -132,7 +132,7 @@ export class AsientosUbicacion {
 "Alfonso Santiago",
 "Rodriguez Angela",
 "Diaz Ariel",
-"Agüero Sol",] 
+"Agüero Sol",]
   },
   {
     numero: 7,
@@ -142,7 +142,7 @@ export class AsientosUbicacion {
 "Torres Jessica",
 "Leguero Axel",
 "Romero Santiago",
-"(Camila su novia)",
+"Erica Fernandez",
 "Lillia Lucas",]
   }]
 
