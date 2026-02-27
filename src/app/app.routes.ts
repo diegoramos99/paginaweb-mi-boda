@@ -13,6 +13,6 @@ export const routes: Routes = [
     {path: 'ubicacion', component: Ubicacion},
     {path: 'asientos', component: Asientos},
     {path: 'regalos', component: ListaRegalos},
-    {path: 'invitacion', component: Invitacion},
+    {path: 'invitacion/:codigo', component: Invitacion},
 
 ];
