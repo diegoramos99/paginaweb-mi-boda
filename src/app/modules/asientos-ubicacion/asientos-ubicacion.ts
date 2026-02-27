@@ -144,7 +144,20 @@ export class AsientosUbicacion {
 "Romero Santiago",
 "Erica Fernandez",
 "Lillia Lucas",]
-  }]
+  },
+  {
+  numero: 8,
+  invitados: [
+"Jorge  ",
+"Sandra",
+"Francisco Espinoza",
+"(Su mujer)",
+"Bruno Severo",
+"Beatriz Bruno",
+"Daniela Lopez",
+"(Su Marido)"]
+  }
+]
 
   cartelVisible = false;
   cartelX = 0;

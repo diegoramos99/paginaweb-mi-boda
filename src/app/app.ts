@@ -10,10 +10,11 @@ import { trigger, transition, style, animate, query, group } from '@angular/anim
 import { Footer } from './core/footer/footer';
 import { Asientos } from './pages/asientos/asientos';
 import { ListaRegalos } from './pages/lista-regalos/lista-regalos';
+import { Invitacion } from './pages/invitacion/invitacion';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Home , RouterLink, RouterLinkActive, Header,Asistencia,Ubicacion,Footer,Asientos,ListaRegalos],
+  imports: [RouterOutlet, Home , RouterLink, RouterLinkActive, Header,Asistencia,Ubicacion,Footer,Asientos,ListaRegalos,Invitacion],
   templateUrl: './app.html',
   styleUrl: './app.css',
    animations: [
@@ -37,7 +38,7 @@ export class App {
   constructor(private router: Router) {}
 
   ngOnInit() {
-    
+
   }
 
   // Detecta swipe desde HammerJS manualmente
@@ -45,12 +46,12 @@ export class App {
     const hammer = new Hammer(document.body);
     hammer.on('swipeleft', () => this.onSwipeLeft());
     hammer.on('swiperight', () => this.onSwipeRight());
-    
+
   }
-  
+
   onSwipeLeft() {
     console.log("para la izquierda");
-    
+
     this.indiceActual=this.vistas.indexOf(this.router.url);
     if (this.indiceActual < this.vistas.length - 1) {
       this.indiceActual++;
@@ -66,6 +67,6 @@ export class App {
       this.router.navigate([this.vistas[this.indiceActual]]);
     }
     console.log(this.indiceActual);
-    
+
   }
 }
