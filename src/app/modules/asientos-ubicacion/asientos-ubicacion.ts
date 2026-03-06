@@ -80,7 +80,7 @@ export class AsientosUbicacion {
       "Ramos Marcela",
       "Medina Luis",
       "Vargas Gabriel",
-      "Acuña Mailiy"]
+      "Acuña Belen"]
   },
   {
     numero: 3,

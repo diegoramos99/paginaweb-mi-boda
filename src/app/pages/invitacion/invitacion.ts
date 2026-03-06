@@ -41,11 +41,11 @@ invitados: any = {
 'elbuendenis': { nombre: 'EL BUEN DENISE' },
 'jessica': { nombre: 'JESSICA' },
 'axel': { nombre: 'AXEL' },
-'santiagoalto': { nombre: 'SANTIAGO, ERICA' },
+'santiagoalto': { nombre: 'SANTIAGO, ERIKA' },
 'daniela': { nombre: 'DANIELA, RODRIGO' },
 'bruno': { nombre: 'SEVERO, BEATRIZ' },
 'elmascapito': { nombre: 'ALEJANDRITO, LA SEÑORA DE ALEJANDRITO' },
-'sandra': { nombre: 'SANDRA ,su pareja' },
+'sandra': { nombre: 'SANDRA ,Su Pareja' },
 'jorgito': { nombre: 'JORGE' },
 
 
