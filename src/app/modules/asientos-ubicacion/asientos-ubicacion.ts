@@ -148,10 +148,10 @@ export class AsientosUbicacion {
   {
   numero: 8,
   invitados: [
-"Jorge  ",
-"Sandra",
+"Jorge ",
+"Sandra ",
 "Francisco Espinoza",
-"(Su mujer)",
+"Roxana ",
 "Bruno Severo",
 "Beatriz Bruno",
 "Daniela Lopez",
@@ -183,7 +183,7 @@ export class AsientosUbicacion {
         let nombreCompletoInvertido = nombreDividido.reverse().join(" ");
 
 
-        if (nombreDividido[0].includes(nombre!) || nombreDividido[1].includes(nombre!) || nombreCompleto.includes(nombre!) || nombreCompletoInvertido.includes(nombre!)) {
+        if (nombreDividido[0].includes(nombre!) || nombreDividido[1]?.includes(nombre!) || nombreCompleto.includes(nombre!) || nombreCompletoInvertido.includes(nombre!)) {
           li[index].style.fontWeight = 'bold';
           li[index].style.color = 'white';
           li[index].style.backgroundColor = 'rgba(53, 145, 64, 0.476)';
