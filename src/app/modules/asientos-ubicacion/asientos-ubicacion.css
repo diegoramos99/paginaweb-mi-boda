@@ -29,8 +29,8 @@
     grid-template-areas:
         "   .      candy   .    mesaPrincipal     .      .      ."
         "   .       mes2   col1      .            col2   mes1   ."
-        "   mes8      .    mes7      .            mes5    .     mes4"
-        "  .        mes3   col3      .            col4   mes6   ."
+        "   mes8      .    mes4      .            mes3    .     mes7"
+        "  .        mes6   col3      .            col4   mes5   ."
         "puertachica .     .     puertagrande     .      .      ."
 }
 

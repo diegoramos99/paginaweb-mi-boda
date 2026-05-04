@@ -67,7 +67,10 @@ export class AsientosUbicacion {
       "Gramajo Mayra",
       "Ziegler Lucas",
       "Ziegler Francisco",
-      "gutierrez Margarita"]
+      "Ziegler Nicolas",
+      "Gutierrez Margarita",
+    "Maria Jose",
+  "Alejandro"]
   },
   {
     numero: 2,
@@ -85,6 +88,20 @@ export class AsientosUbicacion {
   {
     numero: 3,
     invitados: [
+"Cejas Benita",
+"Cejas Vitalio",
+"Cejas Lorena",
+"Carrizo Diego",
+"Carrizo Francisco",
+"Carrizo Dalila",
+"Carrizo Jazmin",
+"Cejas Ariel",
+"Cejas Ivanna",
+"Cejas Hector",]
+  },
+  {
+    numero: 4,
+    invitados: [
       "Arce Laura",
       "Arce Luisa",
       "Perez Sebastian",
@@ -93,69 +110,59 @@ export class AsientosUbicacion {
       "Piutrin Yesica",
       "Rojas Nehemías",
       "Arce Julio",
-      "Arce Marta",]
-  },
-  {
-    numero: 4,
-    invitados: [
-"Cejas Benita",
-"Cejas Vitalio",
-"Cejas Lorena",
-"Carrizo Diego",
-"Carrizo Francisco",
-"Cejas Ariel",
-"Cejas Hector",]
+      "Aguilar Marta",
+      "Gramajo Walter Ariel"]
   },
   {
     numero: 5,
     invitados: [
-"Cejas Julio",
-"Cejas Veronica",
-"Carrizo Jazmin",
-"Carrizo Dalila",
-"Cejas Ivanna",
-"Chazarreta Lucas",
-"Moreira Nadia Abril",
-"Chazarreta Juliana",
-"Perez Nicolas",
-"Piutrin Luna",]
+      "Chazarreta Juliana",
+      "Chazarreta Lucas",
+      "Moreira Nadia Abril",
+      "Chazarreta Cielo",
+      "Perez Nicolas",
+      "Piutrin Luna",
+    "Arce Milagros",
+      "Ariel",
+      "Cejas Julio",
+      "Cejas Veronica",
+  ]
   },
   {
     numero: 6,
     invitados: [
-"Gonzalez Lucila",
-"Migliavacca Camila",
-"Risso Lucas",
-"Mercado Nadia",
-"Medina Thomas",
-"Veraa Micaela",
-"Alfonso Santiago",
-"Rodriguez Angela",
-"Diaz Ariel",
-"Agüero Sol",]
+      "Migliavacca Camila",
+      "Risso Lucas",
+      "Vera Micaela",
+      "Alfonso Santiago",
+      "Mercado Nadia",
+      "Medina Thomas",
+      "Gonzalez Lucila",
+      "Diaz Ariel",
+      "Agüero Sol",]
   },
   {
     numero: 7,
     invitados: [
 
 "Diaz Santiago.",
+"Garay Denisse",
 "Torres Jessica",
 "Leguero Axel",
 "Romero Santiago",
-"Erica Fernandez",
-"Lillia Lucas",]
+"Fernandez Erica",
+"sandra",
+"(hijo de Sandra)",
+"Lopez Daniela",
+"Romero Rodrigo"]
   },
   {
   numero: 8,
   invitados: [
-"Jorge ",
-"Sandra ",
-"Francisco Espinoza",
-"Roxana ",
-"Bruno Severo",
-"Beatriz Bruno",
-"Daniela Lopez",
-"(Su Marido)"]
+"Sergio Fotografo ",
+"Damian Fotografo ",
+"Dj",
+]
   }
 ]
 
